@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Display</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body style="background: rgb(252, 250, 250);">
+  <div class="login">
+    <h1 style="text-align:center">Upload an Image</h1>
+    <form method="post" action= "{{url_for('md5')}}" enctype="multipart/form-data">
+        <label for="image">Select an image:</label>
+        <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" required>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary btn-block btn-large" value="Upload">
+    </form>
+    <br>
+    <br>
+    <br>
+    {{ image }}
+  </div>
+</body>
+  </html>
