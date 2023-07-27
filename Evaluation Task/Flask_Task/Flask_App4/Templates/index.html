@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Load Balance</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h2>Flask Load Balance Application</h2>
+
+    <form action="/get_loaded_models" method="GET">
+        <input type="submit" value="Get Loaded Models">
+    </form>
+
+    <form action="/process_request" method="POST">
+        <label for="model">Model:</label>
+        <select name="model" id="model">
+            <option value="face_detection">Face Detection</option>
+            <option value="car_detection">Car Detection</option>
+            <option value="shoe_detection">Shoe Detection</option>
+            <option value="cloth_detection">Cloth Detection</option>
+            <option value="signal_detection">Signal Detection</option>
+            <option value="water_level_detection">Water Level Detection</option>
+            <option value="missile_detection">Missile Detection</option>
+        </select>
+        <input type="submit" value="Process Request">
+    </form>
+</body>
+</html>

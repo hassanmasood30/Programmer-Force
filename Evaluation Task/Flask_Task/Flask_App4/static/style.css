@@ -1,0 +1,80 @@
+/* Reset default browser styles for better consistency */
+body, h1, h2, h3, form, input, select {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 30px;
+}
+
+/* Styling the "Get Loaded Models" button */
+form:first-of-type input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form:first-of-type input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styling the "Process Request" form elements */
+form:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form:nth-of-type(2) label {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+form:nth-of-type(2) select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+form:nth-of-type(2) select:focus {
+    border-color: #007BFF;
+}
+
+form:nth-of-type(2) input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form:nth-of-type(2) input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
